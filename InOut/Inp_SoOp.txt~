@@ -1,0 +1,409 @@
+<<<<<<<<<<<<<<<<<<<<<<<  SoOp Description File  >>>>>>>>>>>>>>>>>>>>>>>
+**********************************************************************
+************************** Dynamics Data *****************************
+**********************************************************************
+--------------------------- Soil -------------------------------------
+SMAP_191215T073_RZSM.float32  !  Soil Moisture [m^3/m^3] File Name 
+SMAP_191215T073_ST1.float32   !  Soil Temperature [K] File Name (layer 1)
+--------------------------- Snow Cover -------------------------------
+MOD10CM_19Jan.uint8           ! Snow Cover File Name (0.05 deg res.)
+MOD10CM_19Feb.uint8           ! Snow Cover File Name (0.05 deg res.)
+MOD10CM_19Mar.uint8           ! Snow Cover File Name (0.05 deg res.)
+MOD10CM_19Apr.uint8           ! Snow Cover File Name (0.05 deg res.)
+MOD10CM_19May.uint8           ! Snow Cover File Name (0.05 deg res.)
+MOD10CM_19Jun.uint8           ! Snow Cover File Name (0.05 deg res.)
+MOD10CM_19Jul.uint8           ! Snow Cover File Name (0.05 deg res.)
+MOD10CM_19Aug.uint8           ! Snow Cover File Name (0.05 deg res.)
+MOD10CM_19Sep.uint8           ! Snow Cover File Name (0.05 deg res.)
+MOD10CM_19Oct.uint8           ! Snow Cover File Name (0.05 deg res.)
+MOD10CM_18Nov.uint8           ! Snow Cover File Name (0.05 deg res.)
+MOD10CM_18Dec.uint8           ! Snow Cover File Name (0.05 deg res.)
+**********************************************************************
+************************** Static Data *******************************
+**********************************************************************
+----------------------- Digital Elevation Model ----------------------
+Earth2014Shape_LE.int16       ! DEM File Name (1 arc-min res.)
+--------------------------- Land Type --------------------------------
+LandMask_1km_EASE2.uint8      ! Land Mask File Name (1km EASE grid2)
+MCD12C1.uint8                 ! Land Cover File Name (0.05 deg res.)
+--------------------------- Soil Texture -----------------------------
+sand_M01_004_NaN.float32      !  Mass Fractions of Sand File Name
+clay_M01_004_NaN.float32      !  Mass Fractions of Clay File Name
+bulk_M01_004_NaN.float32      !  Bulk Density File Name
+**********************************************************************
+******************* In-situ Soil Moisture Network ********************
+**********************************************************************
+15                           !  Number of Sites                  
+9    30.35    -98.73         !  Radius[km], Latitude, Longitude[deg] TxSON
+9    31.67    -83.6          !  Radius[km], Latitude, Longitude[deg] Little River
+9    31.75    -110.03        !  Radius[km], Latitude, Longitude[deg] Walnut Gulch
+9   -32.91    -62.51         !  Radius[km], Latitude, Longitude[deg] Monte Buey
+9    34.86    -98.08         !  Radius[km], Latitude, Longitude[deg] Little Washita
+9   -34.86     146.16        !  Radius[km], Latitude, Longitude[deg] Yanco
+9    35.38    -98.64         !  Radius[km], Latitude, Longitude[deg] Fort Cobb
+9    41.29    -5.46          !  Radius[km], Latitude, Longitude[deg] Remedhus
+9    42.42    -93.41         !  Radius[km], Latitude, Longitude[deg] South Fork
+9    43.19    -116.75        !  Radius[km], Latitude, Longitude[deg] Reynolds Creek
+9    46.05     106.76        !  Radius[km], Latitude, Longitude[deg] Mongolia
+9    49.60    -97.98         !  Radius[km], Latitude, Longitude[deg] Carman
+9    51.47    -106.48        !  Radius[km], Latitude, Longitude[deg] Kenaston
+9    52.26     6.77          !  Radius[km], Latitude, Longitude[deg] Twente
+9    55.97     9.10          !  Radius[km], Latitude, Longitude[deg] Hobe
+**********************************************************************
+**************************** Transmitters ****************************
+**********************************************************************
+6                             !  Number of Transmitters Group
+============================= Tx 0 : MUOS ============================
+370                           !  Tx Frequency [MHz]
+37                            !  EIRP [dBW]
+============================= Tx 1 : Orbcomm =========================
+137                           !  Tx Frequency [MHz]
+1                             !  EIRP [dBW]
+============================= Tx 4 : GPS =============================
+1575.42                       !  Tx Frequency [MHz]
+32                            !  EIRP [dBW]
+============================= Tx 5 : Glonass L1 http://www.gisresources.com/glonass-signals/
+1602.00                       !  Tx Frequency [MHz]
+25                            !  EIRP [dBW]
+============================= Tx 6 : Galileo E1 https://eudl.eu/pdf/10.1007/978-3-642-13618-4_3
+1575.42                       !  Tx Frequency [MHz]
+12.3                          !  EIRP [dBW]
+============================= Tx 7 : Beidou B1 (CSNC) Jiadong Sun, ‎Jingnan Liu, ‎Yuanxi Yang - 2012
+1561.098                      !  Tx Frequency [MHz]
+33.28                         !  EIRP [dBW]
+**********************************************************************
+**************************** MUOS Spotbeam ***************************
+**********************************************************************
+1                             !  Scale factor for global beam radius
+5     35995.2                 !  Beamwidth/Altitude on each Target [deg][km] 4.7883
+******************************* Receivers ****************************
+******* UD:K=1040000(MUOS), K=620000(ORBCOMM), K=1020000(GPS) ********
+******* MPL:K=720000(MUOS), K=440000(ORBCOMM), K=720000(GPS) *********
+16                            !  Number of Receiver
+6                             !  Number of SoOp Configurations
+------------------------------ MUOS ----------------------------------
+1                             !  Number of Specular Points
+1040000.0                     !  Gain of Gradient Function
+SP1Alpha.ppm                  !  Sprite File Name SP
+370                           !  Rx Frequency [MHz]
+5000                          !  Bandwidth of channel [kHz]
+0.01                          !  Coherent Integration Time [sec]
+USER_DEFINED                  !  Antenna Type (DIPOLE, PATCH, USER_DEFINED)
+antPatternPatch.csv          !  (USER_DEFINED) Antenna Pattern File Name
+360                           !  (USER_DEFINED) Number of Rows (phi-angle Look-up)
+180                           !  (USER_DEFINED) Number of Cols (theta-angle Look-up)
+6.3                           !  (DIPOLE, PATCH) Antenna Max Gain Sky-View [dB]
+6.3                           !  (DIPOLE, PATCH) Antenna Max Gain Earth-View [dB]
+1373                          !  Noise Temperature Sky-View [K]
+290                           !  Noise Temperature Earth-View [k]
+1000                          !  Minimum Local Surface Resolution [m]
+4                             !  Number of Grid Points in theta direction
+60                            !  Numebr of Gird Points in phi direction
+------------------------------ ORBCOMM -------------------------------
+1                            !  Number of Specular Points
+620000.0                      !  Gain of Gradient Function
+SP2Alpha.ppm                  !  Sprite File Name SP
+137                           !  Rx Frequency [MHz]
+25                            !  Bandwidth of channel [kHz]
+0.01                          !  Coherent Integration Time [sec]
+USER_DEFINED                  !  Antenna Type (DIPOLE, PATCH, USER_DEFINED)
+antPatternPatch.csv          !  (USER_DEFINED) Antenna Pattern File Name
+360                           !  (USER_DEFINED) Number of Rows (phi-angle Look-up)
+180                           !  (USER_DEFINED) Number of Cols (theta-angle Look-up)
+6.3                           !  (DIPOLE, PATCH) Antenna Max Gain Sky-View [dB]
+6.3                           !  (DIPOLE, PATCH) Antenna Max Gain Earth-View [dB]
+1373                          !  Noise Temperature Sky-View [K]
+290                           !  Noise Temperature Earth-View [k]
+1000                          !  Minimum Local Surface Resolution [m]
+4                             !  Number of Grid Points in theta direction
+60                            !  Numebr of Gird Points in phi direction
+------------------------------ GPS -----------------------------------
+25                            !  Number of Specular Points
+1020000.0                     !  Gain of Gradient Function
+SP3Alpha.ppm                  !  Sprite File Name SP
+1575.42                       !  Rx Frequency [MHz]
+2046                          !  Bandwidth of channel [kHz]
+0.01                          !  Coherent Integration Time [sec]
+USER_DEFINED                  !  Antenna Type (DIPOLE, PATCH, USER_DEFINED)
+antPatternCustom.csv          !  (USER_DEFINED) Antenna Pattern File Name
+360                           !  (USER_DEFINED) Number of Rows (phi-angle Look-up)
+180                           !  (USER_DEFINED) Number of Cols (theta-angle Look-up)
+6.3                           !  (DIPOLE, PATCH) Antenna Max Gain Sky-View [dB]
+6.3                           !  (DIPOLE, PATCH) Antenna Max Gain Earth-View [dB]
+1373                          !  Noise Temperature Sky-View [K]
+290                           !  Noise Temperature Earth-View [k]
+1000                          !  Minimum Local Surface Resolution [m]
+4                             !  Number of Grid Points in theta direction
+60                            !  Numebr of Gird Points in phi direction
+------------------------------ Glonass -------------------------------
+25                            !  Number of Specular Points
+1020000.0                     !  Gain of Gradient Function
+SP4Alpha.ppm                  !  Sprite File Name SP
+1602.00                       !  Rx Frequency [MHz]
+562.5                         !  Bandwidth of channel [kHz]
+0.01                          !  Coherent Integration Time [sec]
+USER_DEFINED                  !  Antenna Type (DIPOLE, PATCH, USER_DEFINED)
+antPatternCustom.csv          !  (USER_DEFINED) Antenna Pattern File Name
+360                           !  (USER_DEFINED) Number of Rows (phi-angle Look-up)
+180                           !  (USER_DEFINED) Number of Cols (theta-angle Look-up)
+6.3                           !  (DIPOLE, PATCH) Antenna Max Gain Sky-View [dB]
+6.3                           !  (DIPOLE, PATCH) Antenna Max Gain Earth-View [dB]
+1373                          !  Noise Temperature Sky-View [K]
+290                           !  Noise Temperature Earth-View [k]
+1000                          !  Minimum Local Surface Resolution [m]
+4                             !  Number of Grid Points in theta direction
+60                            !  Numebr of Gird Points in phi direction
+------------------------------ Galileo -------------------------------
+25                            !  Number of Specular Points
+1020000.0                     !  Gain of Gradient Function
+SP5Alpha.ppm                  !  Sprite File Name SP
+1575.42                       !  Rx Frequency [MHz]
+24552                         !  Bandwidth of channel [kHz]
+0.01                          !  Coherent Integration Time [sec]
+USER_DEFINED                  !  Antenna Type (DIPOLE, PATCH, USER_DEFINED)
+antPatternCustom.csv          !  (USER_DEFINED) Antenna Pattern File Name
+360                           !  (USER_DEFINED) Number of Rows (phi-angle Look-up)
+180                           !  (USER_DEFINED) Number of Cols (theta-angle Look-up)
+6.3                           !  (DIPOLE, PATCH) Antenna Max Gain Sky-View [dB]
+6.3                           !  (DIPOLE, PATCH) Antenna Max Gain Earth-View [dB]
+1373                          !  Noise Temperature Sky-View [K]
+290                           !  Noise Temperature Earth-View [k]
+1000                          !  Minimum Local Surface Resolution [m]
+4                             !  Number of Grid Points in theta direction
+60                            !  Numebr of Gird Points in phi direction
+------------------------------ Beidou -------------------------------
+30                            !  Number of Specular Points
+1020000.0                     !  Gain of Gradient Function
+SP6Alpha.ppm                  !  Sprite File Name SP
+1561.098                      !  Rx Frequency [MHz]
+2046                          !  Bandwidth of channel [kHz]
+0.01                          !  Coherent Integration Time [sec]
+USER_DEFINED                  !  Antenna Type (DIPOLE, PATCH, USER_DEFINED)
+antPatternCustom.csv          !  (USER_DEFINED) Antenna Pattern File Name
+360                           !  (USER_DEFINED) Number of Rows (phi-angle Look-up)
+180                           !  (USER_DEFINED) Number of Cols (theta-angle Look-up)
+6.3                           !  (DIPOLE, PATCH) Antenna Max Gain Sky-View [dB]
+6.3                           !  (DIPOLE, PATCH) Antenna Max Gain Earth-View [dB]
+1373                          !  Noise Temperature Sky-View [K]
+290                           !  Noise Temperature Earth-View [k]
+1000                          !  Minimum Local Surface Resolution [m]
+4                             !  Number of Grid Points in theta direction
+60                            !  Numebr of Gird Points in phi direction
+**********************************************MUOS********************
+************************** Ground Station *** UD:K=7500 **MPL:K=6000**
+*************************************************K=45(10m)*****K=30(10m)
+0                             !  Number of Gronud Station
+================================ Gs 0 ================================
+0                             !  Ground Station Number Assignment
+3                             !  Number of SoOp Configurations
+------------------------------ MUOS ----------------------------------
+4                             !  Number of Specular Points
+30                          !  Gain of Gradient Function
+SP1Alpha.ppm                  !  Sprite File Name SP
+370                           !  Rx Frequency [MHz]
+5000                          !  Bandwidth of channel [kHz]
+0.01                          !  Coherent Integration Time [sec]
+6.3                           !  Antenna Gain Sky-View [dB]
+6.3                           !  Antenna Gain Earth-View [dB]
+1373                          !  Noise Temperature Sky-View [K]
+290                           !  Noise Temperature Earth-View [k]
+------------------------------ ORBCOMM -------------------------------
+20                            !  Number of Specular Points
+3000                          !  Gain of Gradient Function
+SP2Alpha.ppm                  !  Sprite File Name SP
+137                           !  Rx Frequency [MHz]
+25                            !  Bandwidth of channel [kHz]
+0.01                          !  Coherent Integration Time [sec]
+6.3                           !  Antenna Gain Sky-View [dB]
+6.3                           !  Antenna Gain Earth-View [dB]
+1373                          !  Noise Temperature Sky-View [K]
+290                           !  Noise Temperature Earth-View [k]
+------------------------------ GPS -----------------------------------
+25                            !  Number of Specular Points
+3000                          !  Gain of Gradient Function
+SP3Alpha.ppm                  !  Sprite File Name SP
+1227.6                        !  Rx Frequency [MHz]
+10230                         !  Bandwidth of channel [kHz]
+0.01                          !  Coherent Integration Time [sec]
+6.3                           !  Antenna Gain Sky-View [dB]
+6.3                           !  Antenna Gain Earth-View [dB]
+1373                          !  Noise Temperature Sky-View [K]
+290                           !  Noise Temperature Earth-View [k]
+
+
+
+
+
+============================= Tx 2 : NOAA =========================
+137                           !  Tx Frequency [MHz]
+6.99                          !  EIRP [dBW]
+============================= Tx 3 : METEOR https://www.wmo-sat.info/oscar/satellites/view/483
+137.15                        !  Tx Frequency [MHz]
+6.99                          !  EIRP [dBW]
+
+
+
+
+------------------------------ NOAA -------------------------------
+1                            !  Number of Specular Points
+620000.0                      !  Gain of Gradient Function
+SP7Alpha.ppm                  !  Sprite File Name SP
+137                           !  Rx Frequency [MHz]
+38                            !  Bandwidth of channel [kHz]
+0.01                          !  Coherent Integration Time [sec]
+USER_DEFINED                  !  Antenna Type (DIPOLE, PATCH, USER_DEFINED)
+antPatternPatch.csv          !  (USER_DEFINED) Antenna Pattern File Name
+360                           !  (USER_DEFINED) Number of Rows (phi-angle Look-up)
+180                           !  (USER_DEFINED) Number of Cols (theta-angle Look-up)
+6.3                           !  (DIPOLE, PATCH) Antenna Max Gain Sky-View [dB]
+6.3                           !  (DIPOLE, PATCH) Antenna Max Gain Earth-View [dB]
+1373                          !  Noise Temperature Sky-View [K]
+290                           !  Noise Temperature Earth-View [k]
+1000                          !  Minimum Local Surface Resolution [m]
+4                             !  Number of Grid Points in theta direction
+60                            !  Numebr of Gird Points in phi direction
+------------------------------ METEOR -------------------------------
+1                            !  Number of Specular Points
+620000.0                      !  Gain of Gradient Function
+SP8Alpha.ppm                  !  Sprite File Name SP
+137.15                        !  Rx Frequency [MHz]
+50                            !  Bandwidth of channel [kHz]
+0.01                          !  Coherent Integration Time [sec]
+USER_DEFINED                  !  Antenna Type (DIPOLE, PATCH, USER_DEFINED)
+antPatternPatch.csv          !  (USER_DEFINED) Antenna Pattern File Name
+360                           !  (USER_DEFINED) Number of Rows (phi-angle Look-up)
+180                           !  (USER_DEFINED) Number of Cols (theta-angle Look-up)
+6.3                           !  (DIPOLE, PATCH) Antenna Max Gain Sky-View [dB]
+6.3                           !  (DIPOLE, PATCH) Antenna Max Gain Earth-View [dB]
+1373                          !  Noise Temperature Sky-View [K]
+290                           !  Noise Temperature Earth-View [k]
+1000                          !  Minimum Local Surface Resolution [m]
+4                             !  Number of Grid Points in theta direction
+60                            !  Numebr of Gird Points in phi direction
+
+
+
+
+
+
+40   55     5                 !  Soil mixture 2 (sand, silt, clay) [%]
+30   60    10                 !  Soil mixture 3 (sand, silt, clay) [%]
+15   65    20                 !  Soil mixture 4 (sand, silt, clay) [%]
+
+
+transmitter
+!  Transmitted power
+!  Transmitter antenna gain
+
+receiver
+!  Receiver antenna gain
+!  Coherent integration time
+!  electromagnetic wavelength of the signal
+
+
+
+================================ Rx 1 ================================
+1                             !  SC Number Assignment for Rx 1
+2                             !  Number of SoOp Configurations
+-------------------------------- MUOS --------------------------------
+4                             !  Number of Specular Points
+SP1Alpha.ppm                  !  Sprite File Name SP
+370                           !  Rx Frequency [MHz]
+5000                          !  Bandwidth of channel [kHz]
+6.3                           !  Antenna Gain Sky-View [dB]
+6.3                           !  Antenna Gain Earth-View [dB]
+1373                          !  Noise Temperature Sky-View [K]
+1373                          !  Noise Temperature Earth-View [k]
+-------------------------------- ORBCOMM -----------------------------
+10                            !  Number of Specular Points
+SP2Alpha.ppm                  !  Sprite File Name SP
+137                           !  Rx Frequency [MHz]
+25                            !  Bandwidth of channel [kHz]
+6.3                           !  Antenna Gain Sky-View [dB]
+6.3                           !  Antenna Gain Earth-View [dB]
+1373                          !  Noise Temperature Sky-View [K]
+1373                          !  Noise Temperature Earth-View [k]
+================================ Rx 2 ================================
+2                             !  SC Number Assignment for Rx 2
+2                             !  Number of SoOp Configurations
+-------------------------------- MUOS --------------------------------
+4                             !  Number of Specular Points
+SP1Alpha.ppm                  !  Sprite File Name SP
+370                           !  Rx Frequency [MHz]
+5000                          !  Bandwidth of channel [kHz]
+6.3                           !  Antenna Gain Sky-View [dB]
+6.3                           !  Antenna Gain Earth-View [dB]
+1373                          !  Noise Temperature Sky-View [K]
+1373                          !  Noise Temperature Earth-View [k]
+-------------------------------- ORBCOMM -----------------------------
+10                            !  Number of Specular Points
+SP2Alpha.ppm                  !  Sprite File Name SP
+137                           !  Rx Frequency [MHz]
+25                            !  Bandwidth of channel [kHz]
+6.3                           !  Antenna Gain Sky-View [dB]
+6.3                           !  Antenna Gain Earth-View [dB]
+1373                          !  Noise Temperature Sky-View [K]
+1373                          !  Noise Temperature Earth-View [k]
+================================ Rx 3 ================================
+3                             !  SC Number Assignment for Rx 3
+2                             !  Number of SoOp Configurations
+-------------------------------- MUOS --------------------------------
+4                             !  Number of Specular Points
+SP1Alpha.ppm                  !  Sprite File Name SP
+370                           !  Rx Frequency [MHz]
+5000                          !  Bandwidth of channel [kHz]
+6.3                           !  Antenna Gain Sky-View [dB]
+6.3                           !  Antenna Gain Earth-View [dB]
+1373                          !  Noise Temperature Sky-View [K]
+1373                          !  Noise Temperature Earth-View [k]
+-------------------------------- ORBCOMM -----------------------------
+10                            !  Number of Specular Points
+SP2Alpha.ppm                  !  Sprite File Name SP
+137                           !  Rx Frequency [MHz]
+25                            !  Bandwidth of channel [kHz]
+6.3                           !  Antenna Gain Sky-View [dB]
+6.3                           !  Antenna Gain Earth-View [dB]
+1373                          !  Noise Temperature Sky-View [K]
+1373                          !  Noise Temperature Earth-View [k]
+================================ Rx 4 ================================
+4                             !  SC Number Assignment for Rx 4
+2                             !  Number of SoOp Configurations
+-------------------------------- MUOS --------------------------------
+4                             !  Number of Specular Points
+SP1Alpha.ppm                  !  Sprite File Name SP
+370                           !  Rx Frequency [MHz]
+5000                          !  Bandwidth of channel [kHz]
+6.3                           !  Antenna Gain Sky-View [dB]
+6.3                           !  Antenna Gain Earth-View [dB]
+1373                          !  Noise Temperature Sky-View [K]
+1373                          !  Noise Temperature Earth-View [k]
+-------------------------------- ORBCOMM -----------------------------
+10                            !  Number of Specular Points
+SP2Alpha.ppm                  !  Sprite File Name SP
+137                           !  Rx Frequency [MHz]
+25                            !  Bandwidth of channel [kHz]
+6.3                           !  Antenna Gain Sky-View [dB]
+6.3                           !  Antenna Gain Earth-View [dB]
+1373                          !  Noise Temperature Sky-View [K]
+1373                          !  Noise Temperature Earth-View [k]
+================================ Rx 5 ================================
+5                             !  SC Number Assignment for Rx 5
+2                             !  Number of SoOp Configurations
+-------------------------------- MUOS --------------------------------
+4                             !  Number of Specular Points
+SP1Alpha.ppm                  !  Sprite File Name SP
+370                           !  Rx Frequency [MHz]
+5000                          !  Bandwidth of channel [kHz]
+6.3                           !  Antenna Gain Sky-View [dB]
+6.3                           !  Antenna Gain Earth-View [dB]
+1373                          !  Noise Temperature Sky-View [K]
+1373                          !  Noise Temperature Earth-View [k]
+-------------------------------- ORBCOMM -----------------------------
+10                            !  Number of Specular Points
+SP2Alpha.ppm                  !  Sprite File Name SP
+137                           !  Rx Frequency [MHz]
+25                            !  Bandwidth of channel [kHz]
+6.3                           !  Antenna Gain Sky-View [dB]
+6.3                           !  Antenna Gain Earth-View [dB]
+1373                          !  Noise Temperature Sky-View [K]
+1373                          !  Noise Temperature Earth-View [k]
